@@ -1,0 +1,29 @@
+{
+  "name": "jx_api",
+  "version": "1.0.0",
+  "description": "JX API",
+  "keywords": [
+    "API",
+    "JX"
+  ],
+  "main": "index.js",
+  "type": "module",
+  "homepage": "https://github.com/ten1fs/jx_api",
+  "bugs": {
+    "url": "https://github.com/ten1fs/jx_api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ten1fs/jx_api.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js"
+  },
+  "author": "lyh",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "express": "^4.18.2"
+  }
+}
