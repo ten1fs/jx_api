@@ -1,14 +1,6 @@
-import express from 'express';
 import axios from 'axios';
 
-const app = express();
-
-app.use('*', (_, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-});
-
-app.get('/api/jx/vbg', async (_, res) => {
+export default async function handler(_, res) {
     const url = 'https://okjx.cc/include/loding/mp4.php';
     const result = await axios({
         url: url,
@@ -23,6 +15,4 @@ app.get('/api/jx/vbg', async (_, res) => {
         message: '成功',
         data: data
     });
-});
-
-module.exports = app;
+}
